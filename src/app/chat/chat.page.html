@@ -1,0 +1,20 @@
+<ion-footer>
+  <ion-toolbar>
+    <ion-item>
+      <ion-input [(ngModel)]="message"></ion-input>
+      <ion-button expand="block" [disabled]="message.trim().length < 1" (click)="sendMessage()">Send</ion-button>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>
+<ion-content padding>
+<ion-list>
+  <ion-item *ngFor="let i of messageObj">
+    <ion-title>
+      {{ i.user }}:
+    </ion-title>
+    <ion-label>
+      {{ i.message }}
+    </ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>

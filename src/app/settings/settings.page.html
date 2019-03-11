@@ -1,0 +1,43 @@
+<ion-content padding>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="language" (ionChange)="change()">
+      <ion-list-header>
+        <ion-label>
+          Select Language
+        </ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>English</ion-label>
+        <ion-radio value="en" slot="start" checked color="secondary"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Spanish</ion-label>
+        <ion-radio value="es" slot="start" color="secondary"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Russian</ion-label>
+        <ion-radio value="ru" slot="start" color="secondary"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Dutch</ion-label>
+        <ion-radio value="nl" slot="start" color="secondary"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Latin</ion-label>
+        <ion-radio value="la" slot="start" color="secondary"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hebrew</ion-label>
+        <ion-radio value="he" slot="start" color="secondary"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Chinese</ion-label>
+        <ion-radio value="zh" slot="start" color="secondary"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Arabic</ion-label>
+        <ion-radio value="ar" slot="start" color="secondary"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>
